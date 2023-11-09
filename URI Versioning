@@ -10,3 +10,7 @@ public class ItemControllerV2 {
     // Controller logic for version 2 of the API
 }
 
+Example of API Request with URI Versioning:
+GET /api/v2/items
+Host: example.com
+
