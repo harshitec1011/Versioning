@@ -1,0 +1,12 @@
+@RestController
+@RequestMapping("/api/v1/items")
+public class ItemControllerV1 {
+    // Controller logic for version 1 of the API
+}
+OR
+@RestController
+@RequestMapping("/api/v2/items")
+public class ItemControllerV2 {
+    // Controller logic for version 2 of the API
+}
+
