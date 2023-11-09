@@ -1,0 +1,22 @@
+@RestController
+@RequestMapping("/api/items")
+public class ItemController {
+    
+    @GetMapping
+    public ResponseEntity<List<Item>> getItems(@RequestHeader("Api-Version") String apiVersion) {
+        if ("v1".equals(apiVersion)) {
+            // Implement logic for version 1
+        } else if ("v2".equals(apiVersion)) {
+            // Implement logic for version 2
+        } else {
+            // Handle unsupported version
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(null);
+        }
+    }
+}
+
+Example of API Request with Header Versioning:
+GET /api/items
+Host: example.com
+Api-Version: v2
+
